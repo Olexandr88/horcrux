@@ -159,7 +159,6 @@ func horcruxSidecar(ctx context.Context, node *cosmos.ChainNode, name string, cl
 	return node.Sidecars[len(node.Sidecars)-1], nil
 }
 
-// horcruxSidecar creates a horcrux sidecar process that will start when the chain starts.
 func horcruxProxySidecar(ctx context.Context, node *cosmos.ChainNode, name string, client *client.Client, network string, startupFlags ...string) (*cosmos.SidecarProcess, error) {
 	startCmd := []string{"horcrux-proxy", "start"}
 	startCmd = append(startCmd, startupFlags...)

@@ -50,7 +50,7 @@ func Test2Of3SignerThreeSentriesUniqueConnection(t *testing.T) {
 	testChainSingleNodeAndHorcruxThreshold(t, 2, 3, 2, 3, 1)
 }
 
-// Test2Of3SignerOneSentry will spin up a chain with one single-node validator and one horcrux validator
+// Test3Of5SignerOneSentry will spin up a chain with one single-node validator and one horcrux validator
 // the horcrux validator will have three cosigner nodes with a threshold of two, and one sentry node
 func Test3Of5SignerOneSentry(t *testing.T) {
 	testChainSingleNodeAndHorcruxThreshold(t, 2, 5, 3, 1, 1)
